@@ -27,7 +27,7 @@ interface FormValues{
 }
 
 const ContactPage = () => {
-  const formMethods = useForm()
+  const formMethods = useForm({mode: "onBlur"})
   const [create, { loading, error }] = useMutation<
     CreateContactMutation,
     CreateContactMutationVariables
