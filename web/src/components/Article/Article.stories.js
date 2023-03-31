@@ -1,12 +1,13 @@
-import { Success } from './Article'
 import { standard } from '../ArticleCell/ArticleCell.mock'
 
+import Article from './Article'
+
 export const full = () => {
-  return <Success article={standard().article} />
+  return <Article article={standard().article} />
 }
 
 export const summary = () => {
-  return <Success article={standard().article} summary={true} />
+  return <Article article={standard().article} summary={true} />
 }
 
 export default { title: 'Components/Article' }

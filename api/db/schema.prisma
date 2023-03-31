@@ -13,7 +13,7 @@ model Post {
   title     String
   body      String
   createdAt DateTime  @default(now())
-  Comment   Comment[]
+  comments  Comment[]
 }
 
 model Contact {
